@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Restful-Booker API Suite" verbose="1">
+
+    <test name="Positive Scenarios">
+        <classes>
+            <class name="api.tests.PositiveTests"/>
+        </classes>
+    </test>
+
+    <test name="Negative Scenarios">
+        <classes>
+            <class name="api.tests.NegativeTests"/>
+        </classes>
+    </test>
+
+</suite>

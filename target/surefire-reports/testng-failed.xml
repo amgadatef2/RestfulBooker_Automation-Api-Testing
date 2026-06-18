@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Restful-Booker API Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Negative Scenarios(failed)" verbose="0">
+    <classes>
+      <class name="api.tests.NegativeTests">
+        <methods>
+          <include name="NT04_CreateBooking_InvalidDateFormat"/>
+          <include name="initFramework"/>
+        </methods>
+      </class> <!-- api.tests.NegativeTests -->
+    </classes>
+  </test> <!-- Negative Scenarios(failed) -->
+</suite> <!-- Failed suite [Restful-Booker API Suite] -->

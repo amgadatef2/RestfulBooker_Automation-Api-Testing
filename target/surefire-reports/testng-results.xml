@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="16" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-18T19:36:33 EEST" name="Restful-Booker API Suite" finished-at="2026-06-18T19:36:52 EEST" duration-ms="18707">
+    <groups>
+    </groups>
+    <test started-at="2026-06-18T19:36:33 EEST" name="Positive Scenarios" finished-at="2026-06-18T19:36:45 EEST" duration-ms="12250">
+      <class name="api.tests.PositiveTests">
+        <test-method is-config="true" signature="acquireToken()[pri:0, instance:api.tests.PositiveTests@529cfee5]" started-at="2026-06-18T19:36:33 EEST" name="acquireToken" finished-at="2026-06-18T19:36:38 EEST" duration-ms="4696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acquireToken -->
+        <test-method signature="TC01_HealthCheck()[pri:1, instance:api.tests.PositiveTests@529cfee5]" started-at="2026-06-18T19:36:38 EEST" name="TC01_HealthCheck" finished-at="2026-06-18T19:36:38 EEST" duration-ms="840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_HealthCheck -->
+        <test-method signature="TC02_CreateBooking()[pri:2, instance:api.tests.PositiveTests@529cfee5]" started-at="2026-06-18T19:36:39 EEST" name="TC02_CreateBooking" finished-at="2026-06-18T19:36:40 EEST" duration-ms="1515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_CreateBooking -->
+        <test-method signature="TC03_GetAllBookingIds()[pri:3, instance:api.tests.PositiveTests@529cfee5]" started-at="2026-06-18T19:36:40 EEST" name="TC03_GetAllBookingIds" finished-at="2026-06-18T19:36:41 EEST" duration-ms="1218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_GetAllBookingIds -->
+        <test-method signature="TC04_GetBookingById()[pri:4, instance:api.tests.PositiveTests@529cfee5]" started-at="2026-06-18T19:36:41 EEST" name="TC04_GetBookingById" finished-at="2026-06-18T19:36:42 EEST" depends-on-methods="api.tests.PositiveTests.TC02_CreateBooking" duration-ms="854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04_GetBookingById -->
+        <test-method signature="TC05_UpdateBooking()[pri:5, instance:api.tests.PositiveTests@529cfee5]" started-at="2026-06-18T19:36:42 EEST" name="TC05_UpdateBooking" finished-at="2026-06-18T19:36:43 EEST" depends-on-methods="api.tests.PositiveTests.TC02_CreateBooking" duration-ms="757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC05_UpdateBooking -->
+        <test-method signature="TC06_PartialUpdateBooking()[pri:6, instance:api.tests.PositiveTests@529cfee5]" started-at="2026-06-18T19:36:43 EEST" name="TC06_PartialUpdateBooking" finished-at="2026-06-18T19:36:44 EEST" depends-on-methods="api.tests.PositiveTests.TC02_CreateBooking" duration-ms="745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC06_PartialUpdateBooking -->
+        <test-method signature="TC07_DeleteBooking()[pri:7, instance:api.tests.PositiveTests@529cfee5]" started-at="2026-06-18T19:36:44 EEST" name="TC07_DeleteBooking" finished-at="2026-06-18T19:36:44 EEST" depends-on-methods="api.tests.PositiveTests.TC02_CreateBooking" duration-ms="701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC07_DeleteBooking -->
+        <test-method signature="TC08_VerifyBookingDeleted()[pri:8, instance:api.tests.PositiveTests@529cfee5]" started-at="2026-06-18T19:36:44 EEST" name="TC08_VerifyBookingDeleted" finished-at="2026-06-18T19:36:45 EEST" depends-on-methods="api.tests.PositiveTests.TC07_DeleteBooking" duration-ms="685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC08_VerifyBookingDeleted -->
+      </class> <!-- api.tests.PositiveTests -->
+    </test> <!-- Positive Scenarios -->
+    <test started-at="2026-06-18T19:36:45 EEST" name="Negative Scenarios" finished-at="2026-06-18T19:36:52 EEST" duration-ms="6432">
+      <class name="api.tests.NegativeTests">
+        <test-method is-config="true" signature="initFramework()[pri:0, instance:api.tests.NegativeTests@6dd91637]" started-at="2026-06-18T19:36:31 EEST" name="initFramework" finished-at="2026-06-18T19:36:33 EEST" duration-ms="1743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initFramework -->
+        <test-method signature="NT01_CreateToken_WrongCredentials()[pri:1, instance:api.tests.NegativeTests@6dd91637]" started-at="2026-06-18T19:36:45 EEST" name="NT01_CreateToken_WrongCredentials" finished-at="2026-06-18T19:36:46 EEST" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NT01_CreateToken_WrongCredentials -->
+        <test-method signature="NT02_CreateToken_EmptyCredentials()[pri:2, instance:api.tests.NegativeTests@6dd91637]" started-at="2026-06-18T19:36:46 EEST" name="NT02_CreateToken_EmptyCredentials" finished-at="2026-06-18T19:36:47 EEST" duration-ms="729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NT02_CreateToken_EmptyCredentials -->
+        <test-method signature="NT03_CreateBooking_MissingFields()[pri:3, instance:api.tests.NegativeTests@6dd91637]" started-at="2026-06-18T19:36:47 EEST" name="NT03_CreateBooking_MissingFields" finished-at="2026-06-18T19:36:47 EEST" duration-ms="717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NT03_CreateBooking_MissingFields -->
+        <test-method signature="NT04_CreateBooking_InvalidDateFormat()[pri:4, instance:api.tests.NegativeTests@6dd91637]" started-at="2026-06-18T19:36:47 EEST" name="NT04_CreateBooking_InvalidDateFormat" finished-at="2026-06-18T19:36:48 EEST" duration-ms="687" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid date format should not result in a successful booking did not expect [200] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid date format should not result in a successful booking did not expect [200] but found [200]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failEquals(Assert.java:1582)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+at org.testng.Assert.assertNotEquals(Assert.java:2201)
+at api.tests.NegativeTests.NT04_CreateBooking_InvalidDateFormat(NegativeTests.java:86)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NT04_CreateBooking_InvalidDateFormat -->
+        <test-method signature="NT05_GetBooking_NotFound()[pri:5, instance:api.tests.NegativeTests@6dd91637]" started-at="2026-06-18T19:36:48 EEST" name="NT05_GetBooking_NotFound" finished-at="2026-06-18T19:36:49 EEST" duration-ms="712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NT05_GetBooking_NotFound -->
+        <test-method signature="NT06_UpdateBooking_NoToken()[pri:6, instance:api.tests.NegativeTests@6dd91637]" started-at="2026-06-18T19:36:49 EEST" name="NT06_UpdateBooking_NoToken" finished-at="2026-06-18T19:36:49 EEST" duration-ms="701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NT06_UpdateBooking_NoToken -->
+        <test-method signature="NT07_UpdateBooking_InvalidToken()[pri:7, instance:api.tests.NegativeTests@6dd91637]" started-at="2026-06-18T19:36:49 EEST" name="NT07_UpdateBooking_InvalidToken" finished-at="2026-06-18T19:36:50 EEST" duration-ms="704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NT07_UpdateBooking_InvalidToken -->
+        <test-method signature="NT08_DeleteBooking_NoToken()[pri:8, instance:api.tests.NegativeTests@6dd91637]" started-at="2026-06-18T19:36:50 EEST" name="NT08_DeleteBooking_NoToken" finished-at="2026-06-18T19:36:51 EEST" duration-ms="711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NT08_DeleteBooking_NoToken -->
+        <test-method signature="NT09_GetBookings_NoMatchFilter()[pri:9, instance:api.tests.NegativeTests@6dd91637]" started-at="2026-06-18T19:36:51 EEST" name="NT09_GetBookings_NoMatchFilter" finished-at="2026-06-18T19:36:52 EEST" duration-ms="721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NT09_GetBookings_NoMatchFilter -->
+      </class> <!-- api.tests.NegativeTests -->
+    </test> <!-- Negative Scenarios -->
+  </suite> <!-- Restful-Booker API Suite -->
+</testng-results>
