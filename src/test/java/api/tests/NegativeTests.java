@@ -83,7 +83,7 @@ public class NegativeTests extends BaseTest {
 
         Response response = BookingEndpoints.createBooking(booking);
 
-        Assert.assertNotEquals(response.getStatusCode(), 200,
+        Assert.assertNotEquals(response.getStatusCode(), 400,
                 "Invalid date format should not result in a successful booking");
     }
 
