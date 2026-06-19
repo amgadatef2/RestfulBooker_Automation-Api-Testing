@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.23 s <<< FAILURE! -- in TestSuite
-api.tests.NegativeTests.NT04_CreateBooking_InvalidDateFormat -- Time elapsed: 0.693 s <<< FAILURE!
+Tests run: 17, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 41.26 s <<< FAILURE! -- in TestSuite
+api.tests.NegativeTests.NT04_CreateBooking_InvalidDateFormat -- Time elapsed: 0.828 s <<< FAILURE!
 java.lang.AssertionError: Invalid date format should not result in a successful booking did not expect [200] but found [200]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failEquals(Assert.java:1582)
